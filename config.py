@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 basedir = os.path.abspath(os.path.dirname(__file__)) # эта переменная - путь к папке с запускаемым скриптом
 load_dotenv(os.path.join(basedir, '.env'))
 
-
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
     # второй вариант создания переменной SECRET_KEY['SECRET_KEY'] = 'you-will-never-guess'
